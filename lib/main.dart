@@ -49,8 +49,18 @@ class MyHome extends StatelessWidget {
           ),
           persistentFooterButtons: [
             Text.rich(
+               textAlign: TextAlign.center,
               TextSpan(
-                  text: 'By continuing, uou agree to our terms of service'),
+                children: [
+                  TextSpan(text: 'By continuing, you agree to our' ),
+                  TextSpan(text: ' terms and condition', style: TextStyle(color: Colors.blueAccent, decorationColor: Colors.blueAccent, decoration: TextDecoration.underline,),),
+                  TextSpan(text: ' and' ),
+                  TextSpan(text: ' terms and condition', style: TextStyle(color: Colors.blueAccent, decorationColor: Colors.blueAccent, decoration: TextDecoration.underline,),),
+
+                  
+                ]
+               ),
+          
             ),
           ],
         ));
